@@ -1,0 +1,140 @@
+// Close icon
+
+.mobile-menu-btn {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  z-index: 100;
+
+  &:hover .mobile-menu-burger, &:focus .mobile-menu-burger, &:hover .mobile-menu-close, &:focus .mobile-menu-close{
+      fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+
+.mobile-menu-burger {
+    transition: opacity var(--anim);
+
+  .mobile-menu-btn.is-open & {
+    opacity: 0;
+  }
+}
+
+.mobile-menu-close {
+  opacity: 0;
+  transition: opacity var(--anim);
+
+  .mobile-menu-btn.is-open & {
+    opacity: 1;
+  }
+}
+
+//  Mobile menu window
+
+.mobile-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  transform: translateX(150%);
+
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--basic-white);
+  padding-top: 48px;
+  padding-left: 84px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  z-index: 10;
+
+  transition: transform var(--anim);
+
+  &.is-open {
+    transform: translateX(0);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+// Mobile Nav
+
+.mobile-menu__nav {
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.mobile-menu__nav__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-txt);
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+// Mobile contacts
+
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+  list-style: none;
+}
+
+.mobile-menu__contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-menu__contacts__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-color-txt);
+}
+
+.accent {
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--accent-color);
+}
+
+// Mobile socials
+
+.mobile-menu__socials {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-menu__socials__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  padding-right: 10px;
+}
+
+.mobile-menu__socials__item:not(:last-child) .mobile-menu__socials__link {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}

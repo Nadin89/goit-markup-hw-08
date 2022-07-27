@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css">
+     <!--<link rel="stylesheet" href="./css/styles.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--Body-->
+  <body>
+    <!--Шапка сайту-->
+    <header class="header">
+      <div class="container container__header">
+          
+        <!--Nav Logo-->
+  
+        <a class="logo logo__header link" href="./index.html"><span class="logo__part-txt">Web</span>Studio</a>
+  
+        <!--Nav Menu Start-->
+  
+        <nav class="main-nav">
+          <ul class="main-nav__list list">
+            <li class="item">
+              <div class="main-nav__content"><a class="main-nav__link link" href="./index.html">Студія</a></div>
+            </li>
+            <li class="item">
+              <div class="main-nav__content"><a class="main-nav__link link" href="./portfolio.html">Портфоліо</a></div>
+            </li>
+            <li class="item">
+              <div class="main-nav__content"><a class="main-nav__link link current-page" href="./contacts.html">Контакти</a></div>
+            </li>
+          </ul>
+        </nav>
+        <!--Nav Menu End-->
+  
+        <!-- Nav Contacts Start-->
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/symbol-defs-opt.svg#icon-mail">
+                </use>
+              </svg>info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./images/symbol-defs-opt.svg#icon-mobile">
+                </use>
+              </svg>+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+     <!-- Nav Contacts End-->
+      </div>
+    </header>
+    <main>
+      <h1 style="text-align: center; margin: 80px; color: blue;"> ТЕСТОВА СТОРІНКА КОНТАКТІВ </h1>
+    </main>
+    <!--Footer-->
+
+  <footer class="footer">
+    <div class="container footer-column">
+      <div class="footer-first-column">
+
+        <!-- Footer logo -->
+        <a class="logo logo__footer link" href="./index.html"><span class="logo__part-txt">Web</span>Studio</a>
+
+        <!-- Footer address -->
+        <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+
+        <!-- Footer contacts -->
+        <a class="footer-contacts footer-contacts--email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
+
+      <!-- Footer socials -->
+      <div class="footer-social">
+        <h1 class="footer-social-title">Приєднуйтеся</h1>
+        <ul class="socials">
+          <li>
+            <a class="socials__link--footer socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg class="socials__icon" width="20px" height="20px">
+                <use href="./images/symbol-defs-opt.svg#icon-instagram">
+                </use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="socials__link--footer socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <svg class="socials__icon" width="20px" height="20px">
+                <use href="./images/symbol-defs-opt.svg#icon-twitter">
+                </use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="socials__link--footer socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <svg class="socials__icon" width="20px" height="20px">
+                <use href="./images/symbol-defs-opt.svg#icon-facebook">
+                </use>
+              </svg>
+            </a>
+          </li>
+
+          <li>
+            <a class="socials__link--footer socials__link socials__link" href="" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+              <svg class="socials__icon" width="20px" height="20px">
+                <use href="./images/symbol-defs-opt.svg#icon-linkedin">
+                </use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <form class="footer-form" action="javascript:void(0);" method="POST">
+        <label class="footer-form__label">
+          <span class="footer-form__txt">Підпишіться на розсилку</span>
+          <input class="footer-form__input" type="email" name="email" placeholder="E-mail">
+        </label>
+        <button class="footer-form-btn" type="submit">Підписатися
+        </button>
+      </form>
+    </div>
+
+  </footer>
+
+  </body>
+</html>

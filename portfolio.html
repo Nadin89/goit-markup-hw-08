@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebStudio</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+</head>
+<!--Body-->
+
+<body>
+
+  <header class="header">
+    <div class="container container__header">
+
+      <!--Nav Logo-->
+
+      <a class="logo logo__header link" href="./index.html" aria-label="WebStudio logo"><span
+          class="logo__part-txt">Web</span>Studio</a>
+
+      <!--Nav Menu Start-->
+
+      <nav class="main-nav">
+        <ul class="main-nav__list list">
+          <li class="item">
+            <div class="main-nav__content"><a class="main-nav__link link" href="./index.html">Студія</a></div>
+          </li>
+          <li class="item">
+            <div class="main-nav__content"><a class="main-nav__link link current-page"
+                href="./portfolio.html">Портфоліо</a></div>
+          </li>
+          <li class="item">
+            <div class="main-nav__content"><a class="main-nav__link link" href="./contacts.html">Контакти</a></div>
+          </li>
+        </ul>
+      </nav>
+      <!--Nav Menu End-->
+
+      <!-- Nav Contacts Start-->
+      <ul class="contacts">
+        <li class="contacts__item">
+          <a class="contacts__link link" href="mailto:info@devstudio.com">
+            <svg class="contacts__icon" width="16px" height="12px">
+              <use href="./images/symbol-defs-opt.svg#icon-mail">
+              </use>
+            </svg>info@devstudio.com
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__link link" href="tel:+380961111111">
+            <svg class="contacts__icon" width="10px" height="16px">
+              <use href="./images/symbol-defs-opt.svg#icon-mobile">
+              </use>
+            </svg>+38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <!-- Nav Contacts End-->
+      <button class="mobile-menu-btn" type="button" data-menu-button>
+        <svg class="mobile-menu-icon" width="40px" height="40px">
+          <use class="mobile-menu-burger" href="./images/symbol-defs-opt.svg#icon-burger-menu">
+          </use>
+          <use class="mobile-menu-close" href="./images/symbol-defs-opt.svg#icon-close-menu">
+          </use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!--Головний контент-->
+  <main>
+    <section class="portfolio">
+      <div class="container">
+        <!-- Фільтри прикладів робіт -->
+        <ul class="filter list">
+          <li class="filter__item">
+            <button class="filter_btn current-bnt" type="button">Всі</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter_btn" type="button">Веб-сайти</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter_btn" type="button">Додатки</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter_btn" type="button">Дизайн</button>
+          </li>
+          <li class="filter__item">
+            <button class="filter_btn" type="button">Маркетинг</button>
+          </li>
+        </ul>
+
+        <ul class="portfolio__list list">
+
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_1_370px.webp 1x, ./images/images-portfolio/pr_1_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_1_370px.jpg 1x, ./images/images-portfolio/pr_1_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_1_354px.webp 1x, ./images/images-portfolio/pr_1_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_1_354px.jpg 1x, ./images/images-portfolio/pr_1_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_1_450px.webp 1x, ./images/images-portfolio/pr_1_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_1_450px.jpg 1x, ./images/images-portfolio/pr_1_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_1_450px.jpg" alt="Технокряк" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">Технокряк</h3>
+              <p class="item__txt">Веб-сайт</p>
+            </div>
+          </li>
+
+
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_2_370px.webp 1x, ./images/images-portfolio/pr_2_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_2_370px.jpg 1x, ./images/images-portfolio/pr_2_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_2_354px.webp 1x, ./images/images-portfolio/pr_2_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_2_354px.jpg 1x, ./images/images-portfolio/pr_2_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_2_450px.webp 1x, ./images/images-portfolio/pr_2_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_2_450px.jpg 1x, ./images/images-portfolio/pr_2_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_2_450px.jpg" alt="Постер New Orlean vs Golden Star" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">
+                Постер New Orlean vs Golden Star
+              </h3>
+              <p class="item__txt">Дизайн</p>
+            </div>
+          </li>
+
+
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_3_370px.webp 1x, ./images/images-portfolio/pr_3_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_3_370px.jpg 1x, ./images/images-portfolio/pr_3_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_3_354px.webp 1x, ./images/images-portfolio/pr_3_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_3_354px.jpg 1x, ./images/images-portfolio/pr_3_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_3_450px.webp 1x, ./images/images-portfolio/pr_3_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_3_450px.jpg 1x, ./images/images-portfolio/pr_3_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_3_450px.jpg" alt="Ресторан Seafood" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">Ресторан Seafood</h3>
+              <p class="item__txt">Додаток</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_4_370px.webp 1x, ./images/images-portfolio/pr_4_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_4_370px.jpg 1x, ./images/images-portfolio/pr_4_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_4_354px.webp 1x, ./images/images-portfolio/pr_4_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_4_354px.jpg 1x, ./images/images-portfolio/pr_4_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_4_450px.webp 1x, ./images/images-portfolio/pr_4_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_4_450px.jpg 1x, ./images/images-portfolio/pr_4_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_4_450px.jpg" alt="Проект Prime" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">Проект Prime</h3>
+              <p class="item__txt">Маркетинг</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_5_370px.webp 1x, ./images/images-portfolio/pr_5_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_5_370px.jpg 1x, ./images/images-portfolio/pr_5_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_5_354px.webp 1x, ./images/images-portfolio/pr_5_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_5_354px.jpg 1x, ./images/images-portfolio/pr_5_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_5_450px.webp 1x, ./images/images-portfolio/pr_5_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_5_450px.jpg 1x, ./images/images-portfolio/pr_5_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_5_450px.jpg" alt="Проект Boxes" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">Проект Boxes</h3>
+              <p class="item__txt">Додаток</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_6_370px.webp 1x, ./images/images-portfolio/pr_6_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_6_370px.jpg 1x, ./images/images-portfolio/pr_6_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_6_354px.webp 1x, ./images/images-portfolio/pr_6_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_6_354px.jpg 1x, ./images/images-portfolio/pr_6_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_6_450px.webp 1x, ./images/images-portfolio/pr_6_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_6_450px.jpg 1x, ./images/images-portfolio/pr_6_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_6_450px.jpg" alt="Inspiration has no Borders" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">
+                Inspiration has no Borders
+              </h3>
+              <p class="item__txt">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_7_370px.webp 1x, ./images/images-portfolio/pr_7_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_7_370px.jpg 1x, ./images/images-portfolio/pr_7_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_7_354px.webp 1x, ./images/images-portfolio/pr_7_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_7_354px.jpg 1x, ./images/images-portfolio/pr_7_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_7_450px.webp 1x, ./images/images-portfolio/pr_7_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_7_450px.jpg 1x, ./images/images-portfolio/pr_7_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_7_450px.jpg" alt="Издание Limited Edition" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">
+                Издание Limited Edition
+              </h3>
+              <p class="item__txt">Дизайн</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_8_370px.webp 1x, ./images/images-portfolio/pr_8_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_8_370px.jpg 1x, ./images/images-portfolio/pr_8_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_8_354px.webp 1x, ./images/images-portfolio/pr_8_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_8_354px.jpg 1x, ./images/images-portfolio/pr_8_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_8_450px.webp 1x, ./images/images-portfolio/pr_8_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_8_450px.jpg 1x, ./images/images-portfolio/pr_8_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_8_450px.jpg" alt="Проект LAB" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">Проект LAB</h3>
+              <p class="item__txt">Маркетинг</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="item__thumb">
+              <picture>
+                <!-- Desktop screen -->
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_9_370px.webp 1x, ./images/images-portfolio/pr_9_370px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 1200px)"
+                  srcset="./images/images-portfolio/pr_9_370px.jpg 1x, ./images/images-portfolio/pr_9_370px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Tablet screen -->
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_9_354px.webp 1x, ./images/images-portfolio/pr_9_354px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(min-width: 768px)"
+                  srcset="./images/images-portfolio/pr_9_354px.jpg 1x, ./images/images-portfolio/pr_9_354px@2.jpg 2x,"
+                  type="image/jpg" />
+                <!-- Mobile screen -->
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_9_450px.webp 1x, ./images/images-portfolio/pr_9_450px@2.webp 2x,"
+                  type="image/webp" />
+                <source media="(max-width: 767px)"
+                  srcset="./images/images-portfolio/pr_9_450px.jpg 1x, ./images/images-portfolio/pr_9_450px@2.jpg 2x,"
+                  type="image/jpg" />
+                <img class="item__img" src="./images/images-portfolio/pr_9_450px.jpg" alt="Growing Business" width="450"
+                  height="294" />
+              </picture>
+              <div class="overlay">
+                <p class="overlay__txt">Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                  сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            </div>
+            <div class="item__description">
+              <h3 class="item__title">Growing Business</h3>
+              <p class="item__txt">Додаток</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="footer">
+      <div class="container footer-column">
+        <div class="footer-first-column">
+
+          <!-- Footer logo -->
+          <a class="logo logo__footer link" href="./index.html"><span class="logo__part-txt">Web</span>Studio</a>
+
+          <!-- Footer address -->
+          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+
+          <!-- Footer contacts -->
+          <a class="footer-contacts footer-contacts--email link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="footer-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
+
+        <!-- Footer socials -->
+        <div class="footer-social">
+          <h1 class="footer-social__title">Приєднуйтеся</h1>
+          <ul class="socials">
+            <li>
+              <a class="socials__link--footer socials__link" href="" target="_blank" rel="noopener noreferrer"
+                aria-label="Instagram">
+                <svg class="socials__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs-opt.svg#icon-instagram">
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="socials__link--footer socials__link" href="" target="_blank" rel="noopener noreferrer"
+                aria-label="Twitter">
+                <svg class="socials__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs-opt.svg#icon-twitter">
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="socials__link--footer socials__link" href="" target="_blank" rel="noopener noreferrer"
+                aria-label="Facebook">
+                <svg class="socials__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs-opt.svg#icon-facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a class="socials__link--footer socials__link socials__link" href="" target="_blank"
+                rel="noopener noreferrer" aria-label="Linkedin">
+                <svg class="socials__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs-opt.svg#icon-linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form" action="javascript:void(0);" method="POST">
+          <label for="telegram" class="footer-form__label">Підпишіться на розсилку</label>
+          <div class="form-wrapper">
+            <input class="footer-form__input" type="email" name="email" id="telegram" placeholder="E-mail" />
+            <button class="footer-form-btn" type="submit">Підписатися
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal__close-btn" type="button">
+          <svg width="18px" height="18px">
+            <use href="./images/symbol-defs-opt.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <!-- Modal Form -->
+        <form class="modal-form" action="javascript:void(0);" method="POST">
+          <strong class="modal-form__title">Залишіть свої дані, ми вам перетелефонуємо</strong>
+
+          <label class="modal-form__label" for="modal-form-name">
+            <span>Ім'я</span>
+            <span class="modal-form__input-wrapper">
+              <input class="modal-form__input" type="text" name="modal-form-name" id="modal-form-name">
+              <svg class="modal-form__icons" width="18px" height="18px">
+                <use href="./images/symbol-defs-opt.svg#icon-person"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form__label" for="modal-form-tel">
+            <span>Телефон</span>
+            <span class="modal-form__input-wrapper">
+              <input class="modal-form__input" type="tel" name="modal-form-tel" id="modal-form-tel">
+              <svg class="modal-form__icons" width=" 18px" height="18px">
+                <use href="./images/symbol-defs-opt.svg#icon-phone-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form__label" for="modal-form-email">
+            <span>Пошта</span>
+            <span class="modal-form__input-wrapper">
+              <input class="modal-form__input" type="email" name="modal-form-email" id="modal-form-email">
+              <svg class="modal-form__icons" width=" 18px" height="18px">
+                <use href="./images/symbol-defs-opt.svg#icon-email-black"></use>
+              </svg>
+            </span>
+          </label>
+
+          <label class="modal-form__label" for="modal-form-comment">
+            <span>Коментар</span>
+            <textarea name="modal-form-comment" id="modal-form-comment" placeholder="Введіть текст"></textarea>
+          </label>
+
+          <label class="modal-form__label checkbox">
+            <input class="checkbox__input visually-hidden" type="checkbox" name="modal-form-checkbox">
+            <span class="checkbox__wrapper">
+              <svg class="checkbox__icon" width="11px" height="8px">
+                <use href="./images/symbol-defs-opt.svg#icon-active-checkbox"></use>
+              </svg>
+            </span>
+            <span class="checkbox__agreement">Погоджуюся з розсилкою та приймаю <a class="checkbox__conditions"
+                href="">Умови договору</a></span></label>
+          <button class="modal-form__btn" type="submit">Відправити</button>
+
+        </form>
+
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__nav">
+        <li class="mobile-menu__nav__item"><a class="mobile-menu__nav__item current-page" href="./index.html">Студія</a>
+        </li>
+        <li class="mobile-menu__nav__item"><a class="mobile-menu__nav__item" href="./portfolio.html">Портфоліо</a></li>
+        <li class="mobile-menu__nav__item"><a class="mobile-menu__nav__item" href="./contacts.html">Контакти</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contacts__item"><a class="mobile-menu__contacts__link accent"
+            href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="mobile-menu__contacts__item"><a class="mobile-menu__contacts__link"
+            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__socials__item"><a class="mobile-menu__socials__link" href="" target="_blank"
+            rel="noopener noreferrer" aria-label="Instagram">Instagram</a></li>
+        <li class="mobile-menu__socials__item"><a class="mobile-menu__socials__link" href="" target="_blank"
+            rel="noopener noreferrer" aria-label="Twitter">Twitter</a></li>
+        <li class="mobile-menu__socials__item"><a class="mobile-menu__socials__link" href="" target="_blank"
+            rel="noopener noreferrer" aria-label="Facebook">Facebook</a></li>
+        <li class="mobile-menu__socials__item"><a class="mobile-menu__socials__link" href="" target="_blank"
+            rel="noopener noreferrer" aria-label="Linkedin">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>

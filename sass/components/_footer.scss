@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--bg-color-dark);
+  width: 100%;
+}
+
+.footer-column {
+@media screen and (min-width: 768px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+}
+}
+
+.footer-first-column {
+  padding-top: 60px;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+  text-align: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+  padding-bottom: 60px;
+  margin-bottom: 0;
+  margin-right: 70px;
+}
+}
