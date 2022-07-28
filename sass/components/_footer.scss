@@ -1,6 +1,10 @@
 .footer {
   background-color: var(--bg-color-dark);
   width: 100%;
+
+  @media screen and (max-width: 767px) {
+    width: 480px;
+}
 }
 
 .footer-column {
@@ -19,7 +23,7 @@
   padding-top: 60px;
   margin-bottom: 60px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
   text-align: center;
   }
 

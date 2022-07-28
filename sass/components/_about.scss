@@ -5,6 +5,12 @@
     display: none;
 }
 }
+.about__title {
+  @extend %h2-title;
+  margin-bottom: 50px;
+  font-size: 36px;
+    line-height: 1.16;
+}
 
 .about__list {
   display: flex;
@@ -41,7 +47,4 @@
   color: var(--basic-white);
 }
 
-.about__title {
-  @extend %h2-title;
-  margin-bottom: 50px;
-}
+

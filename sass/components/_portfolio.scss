@@ -35,6 +35,13 @@ padding-top: 94px;
     padding: 6px 22px;
     border-radius: 4px;
     border: transparent;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+background-color: var(--bg-color-normal);
+color: var(----secondary-color-txt);
 
     transition: background-color var(--anim), color var(--anim),
     box-shadow var(--anim);
