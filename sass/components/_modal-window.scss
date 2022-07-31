@@ -3,8 +3,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
+    max-height: 609px;
     padding: 40px;
 
     background: var(--basic-white);
@@ -12,8 +12,8 @@
     border-radius: 4px;
 
     @media screen and (min-width: 1200px) {
-        width: 521px;
-        height: 581px;
+        max-width: 521px;
+        max-height: 581px;
 }
 }
 
@@ -33,4 +33,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+
 }

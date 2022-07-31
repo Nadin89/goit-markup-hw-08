@@ -22,16 +22,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 120px;
+  max-width: 450px;
+  max-height: 120px;
   background-color: var(--bg-color-normal);
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    max-width: 270px;
 }
 }
 
@@ -51,8 +51,8 @@
 }
 
 .benefits__item {
-  width: 450px;
-  height: 226px;
+  max-width: 450px;
+  max-height: 226px;
   text-align: start; 
 
   font-size: 14px;
@@ -67,11 +67,11 @@
 }
 
   @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 251px;  
+    max-width: 354px;
+    max-height: 251px;  
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    max-width: 270px;
 }
  
  }
